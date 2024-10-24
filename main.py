@@ -3,9 +3,11 @@ from agent import Agent
 from train import train_agent
 import numpy as np
 
+
 def print_q_table(q_table):
     for row in q_table:
         print(' '.join(f'{x:.2f}' for x in row))
+
 
 def main():
     # Create the environment
@@ -27,7 +29,7 @@ def main():
     done = False
     total_reward = 0
 
-    print("\nTesting the agent:")
+    print("\nTesting the Agent:")
     while not done:
         action = agent.choose_action(state, epsilon=0)
         print(f"State: {state}, Action: {action}")
@@ -35,6 +37,7 @@ def main():
         total_reward += reward
 
     print(f"Total reward: {total_reward}")
+
 
 if __name__ == "__main__":
     main()
