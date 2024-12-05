@@ -1,4 +1,4 @@
-#!/Users/egw/PycharmProjects/frozen_lake_training/frozenlake/bin/python
+#!/frozen_lake_training/frozenlake/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
